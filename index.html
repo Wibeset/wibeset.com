@@ -8,7 +8,8 @@
 	<!--[if lt IE 9]>
 	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
-	<link href="http://fonts.googleapis.com/css?family=Dancing+Script|Headland+One" rel="stylesheet" type="text/css">
+	<link href="//fonts.googleapis.com/css?family=Dancing+Script|Headland+One" rel="stylesheet" type="text/css">
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 	<link rel="stylesheet" media="all" href="styles.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="http://wibeset.com/favicon.ico" type="image/x-icon">
@@ -16,44 +17,43 @@
 </head>
 <body lang="fr">
 
-	<header id="header">
-		<h1><span>W</span></h1>
-	</header>
+	<a id="contact" href="mailto:hello@wibeset.com">
+	  	<div class="default-state">
+		    <span><i class="fa fa-envelope"></i></span>
+	  	</div>
+	  	<div class="active-state">
+  		  <span><i class="fa fa-envelope"></i></span>
+  		</div>
+	</a>
 
-  	<div id="content">
-	  	<article id="intro">
-		  	<header><h1>Nous sommes Wibeset. Nous développons des solutions web et mobiles au Saguenay.</h1></header>
-			<a class="facebook" href="http://facebook.com/Wibeset">Facebook &rarr;</a>
-			<a class="twitter" href="http://twitter.com/Wibeset">Twitter &rarr;</a>
-		</article>
-	  	<article id="web">
-		  	<header><h1>Projets web &amp; mobile</h1></header>
-			<ul>
-			  	<li><div>Ne manquez plus jamais la sortie d'un album!</div><a href="http://releezapp.com"><span>&rarr;</span>Releez</a></li>
-				<li><div>Gestionnaire de ligues sportives</div><a href="http://lygue.com"><span>&rarr;</span>Lygue</a></li>
-				<li><div>Pool des séries éliminatoires de la LNH</div><a href="http://playffs.com"><span>&rarr;</span>Playffs</a></li>
-				<li><div>Une façon différente d'explorer des vidéos Youtube</div><a href="http://wibeset.com/tube"><span>&rarr;</span>Tube</a></li>
-			</ul>
-		</article>
-		<article id="clients">
-		  	<header><h1>Clients</h1></header>
-			<ul>
-			  	<li><div>Votre partenaire dans le développement et l'implantation de solutions énergétiques</div><a href="http://enerja.ca"><span>&rarr;</span>EnerJA</a></li>
-				<li><div>Arpenteur-géomètre</div><a href="http://sergemartineau.com"><span>&rarr;</span>Serge Martineau</a></li>
-				<li><div>Développement de la communauté de Volkswagen Canada</div><a href="http://contents.vw.ca/vw4/community/?lang=fr"><span>&rarr;</span>Palm + Havas</a></li>
-			</ul>
-		</article>
-		<article id="contact">
-		  	<header><h1>Une idée de projet pour nous?</h1></header>
-			<a href="mailto:hello@wibeset.com">Contacter nous &rarr;</a>
-		</article>
-	</div>
+	<div id="container">
 
-	<footer id="footer">
-		<div class="container">
-			Copyright &copy; 2013 Wibeset /
-			Background de <a href="http://subtlepatterns.com">Subtle Patterns</a>
+		<div>
+			<section>
+				<header>
+					<h1>Nous sommes Wibeset.</h1>
+				</header>
+				<ul class="hidden animated fadeInDown visible" id="social-links">
+		            <!--<li><a href="mailto:hello@wibeset.com" class="contact">Contact</a></li>-->
+		            <li><a href="https://twitter.com/Wibeset" class="twitter">Twitter</a></li>
+		            <li><a href="https://facebook.com/Wibeset" class="facebook">Facebook</a></li>
+		            <li><a href="https://plus.google.com" class="google">Google+</a></li>
+		        </ul>
+		    </section>
+		    <section>
+		    	<header>
+		    		<h1>Nous développons des solutions web et mobile au Saguenay.</h1>
+		    	</header>
+		    	<ul class="hidden animated fadeInDown visible" id="social-links">
+		            <li><a href="http://lygue.com" class="lygue">Lygue</a></li>
+		            <li><a href="http://tygue.com" class="tygue">Tygue</a></li>
+		            <li><a href="http://playffs.com" class="playffs">Playffs</a></li>
+		            <li><a href="http://releezapp.com" class="releez">Releez</a></li>
+		            <li><a href="http://wibeset.com/tube/index.html" class="tube">Tube</a></li>
+		        </ul>
+		    </section>
 		</div>
+
 	</div>
 
 	<script type="text/javascript">
