@@ -1,0 +1,113 @@
+
+#blogs {
+
+	> ul {
+
+		li {
+			margin-bottom: 30px;
+			font-size: 36px;
+
+			a {
+				color: #777;
+				border-bottom: 3px solid lighten($text-color, 10%);
+				display: block;
+			    font-weight: 400;
+			    font-size: 36px;
+			    padding-bottom: 15px;
+			    text-decoration: none;
+			    transition: all 0.5s ease 0s;
+			}
+			a:hover {
+				color: $accent-color;
+				border-color: $brand-color;
+			}
+		}
+	}
+
+	> a {
+		color: $text-color;
+		border-bottom: 3px solid lighten($text-color, 10%);
+		display: inline-block;
+		margin-bottom: 30px;
+	    font-weight: 400;
+	    font-size: 36px;
+	    padding-bottom: 1px;
+	    text-decoration: none;
+	    transition: all 0.5s ease 0s;
+	}
+	> a:hover {
+		color: #FFF;
+		border-color: $brand-color;
+	}
+
+	article {
+		line-height: 32px;
+		color: $text-color;
+		font-size: 20px;
+
+		h1 {
+			margin-bottom: 30px;
+			line-height: 1.2;
+			font-size: 36px;
+			color: $accent-color;
+		}
+
+		h2 {
+			margin: 45px 0 15px 0;
+			font-size: 24px;
+			color: lighten($text-color, 40%);
+		}
+
+		p {
+			margin: 15px 0;
+		}
+
+		a {
+			color: $text-color;
+			border-bottom: 3px solid lighten($text-color, 10%);
+			transition: all 0.5s ease 0s;
+		}
+		a:hover {
+			color: $accent-color;
+			border-color: $brand-color;
+		}
+
+		em {
+			color: $accent-color;
+		}
+
+		footer {
+			margin-top: 60px;
+			color: darken($text-color, 40%);
+		}
+
+		.gist {
+			margin: 30px 0;
+			max-width: 75%;
+			line-height: 1.5;
+			color: lighten($text-color, 10%);
+			font-size: 80%;
+
+			.gist-file {
+				border-color: lighten($bg-color, 10%);
+
+				.gist-data {
+					border-bottom-color: lighten($bg-color, 10%);
+					background-color: lighten($bg-color, 5%);
+
+					.line-numbers {
+						background-color: lighten($bg-color, 5%);
+						border-right-color: lighten($bg-color, 10%);
+					}
+				}
+
+				.gist-meta {
+					background-color: lighten($bg-color, 5%);
+					background-image: none;
+					text-shadow: none;
+					color: lighten($text-color, 10%);
+				}
+			}
+		}
+	}
+}

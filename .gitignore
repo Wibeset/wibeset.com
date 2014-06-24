@@ -1,2 +1,7 @@
-*.sublime-project
-*.sublime-workspace
+/vendor
+/bootstrap/compiled.php
+composer.phar
+/cache
+._*
+*.sublime-*
+/node_modules

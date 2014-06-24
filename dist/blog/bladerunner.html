@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Nous développons des solutions web et mobiles au Saguenay - Wibeset</title>
+	<meta name="description" content="Wibeset développe des solutions web et mobiles au Saguenay">
+	<meta name="keywords" content="wibeset,mobile,développeur,développement,saguenay,chicoutimi,québec,php">
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<link href="//fonts.googleapis.com/css?family=Headland+One" rel="stylesheet" type="text/css">
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" media="all" href="../assets/css/styles.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
+	<link rel="icon" type="image/png" href="../assets/favicon.ico">
+</head>
+<body>
+
+	<a id="contact" href="mailto:hello@wibeset.com">
+	  	<div class="default-state">
+		    <span><i class="fa fa-envelope"></i></span>
+	  	</div>
+	  	<div class="active-state">
+  		  <span><i class="fa fa-envelope"></i></span>
+  		</div>
+	</a>
+
+	<div id="container">
+		<section id="blogs">
+	<a href="/blog/">..</a>
+	<article>
+		<h1>Bladerunner: Build a static website on Github with Blade and gulp.js</h1>
+
+<p>Meh, why not using Jekyll ? Because. All my latest projects are built with <a href="http://laravel.com">Laravel</a> but it may be a bit overkill for a website build with HTML, CSS and JavaScript only. The goal is to get something really really light that can help me build a website with one HTML layout without copying it (<a href="http://en.wikipedia.org/wiki/Don%27t_repeat_yourself">DRY</a>) on every pages. Here's come the idea, why not build something with <a href="http://laravel.com/docs/templates">Blade</a> (the template engine from <a href="http://laravel.com">Laravel</a>) and [gulp.js|(http://gulpjs.com) to compile SASS and Javascript.</p>
+
+<h2>Setupping the Github repository</h2>
+
+<p>I use a subdirectory called <em>dist</em> on the <em>master</em> branch to be the root directory of the repository's <em>gh-pages</em> branch. Within the <em>master</em>, we'll get all the stuff that we need to generate the static website and a cleaned version into <em>dist</em> subdirectory that will be use to push into <em>gh-pages</em> branch.</p>
+
+<script src="https://gist.github.com/dominicmartineau/6bc21eec008854ebdeb8.js"></script>
+
+<h2>Blade (the template engine)</h2>
+
+<p><a href="http://laravel.com/docs/templates">Blade</a> is a simple, yet powerful templating engine provided with <a href="http://laravel.com">Laravel</a>. <a href="http://laravel.com/docs/templates">Blade</a> is driven by template inheritance and sections. So it's perfect for layout...</p>
+
+<p>To use <a href="http://laravel.com/docs/templates">Blade</a> as a standalone component, I installed <a href="https://packagist.org/packages/philo/laravel-blade">Laravel-Blade</a> from <a href="https://github.com/PhiloNL">PhiloNL</a>.</p>
+
+<h2>gulp.js (the streaming build system)</h2>
+
+<p><a href="http://gulpjs.com">gulp.js</a> make it easy to compile SASS and uglify JavaScript. But what I like the most about it is the ability to automatically run task in background on files changes with <em>gulp.watch()</em>.</p>
+
+<h2>The final result: Bladerunner</h2>
+
+<p>With a little bit of magic (not really) of a PHP script to generate pages from <a href="http://laravel.com/docs/templates">Blade</a> views and <a href="http://gulpjs.com">gulp.js</a>, I have create <a href="https://github.com/Wibeset/bladerunner">Bladerunner</a>. Clone it and use it on your own.</p>
+		<footer>
+			&mdash;
+			<p>Updated 4 minutes from now.</p>
+		</footer>
+	</article>
+</section>
+	</div>
+
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-15965090-1']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+
+</body>
+</html>
