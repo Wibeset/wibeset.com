@@ -2,10 +2,10 @@
 
 @section('content')
 <section id="blogs">
-	<a href="/">..</a>
+	<a href="http://wibeset.com">..</a>
 	<ul>
         @foreach ($articles as $article)
-        <li><a href="{{ $article['uri'] }}">{{ $article['title'] }}</a></li>
+        <li><a href="http://wibeset.com/blog/{{ $article['uri'] }}">{{ $article['title'] }}</a></li>
         @endforeach
     </ul>
 </section>
