@@ -2,7 +2,7 @@
 
 @section('content')
 <section id="blogs">
-	<a href="/blog/">..</a>
+	<a href="blog/">..</a>
 	<article>
 		{{ $content }}
 		<footer>
