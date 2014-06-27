@@ -7,7 +7,7 @@
 		{{ $content }}
 		<footer>
 			&mdash;
-			<p>Updated {{ $date }}.</p>
+			<p>{{ $date }}.</p>
 		</footer>
 	</article>
 </section>

@@ -132,18 +132,14 @@ body {
   font-size: 36px; }
   #blogs > ul li a {
     color: #777;
-    border-bottom: 3px solid #b3b3b3;
-    display: block;
     font-weight: 400;
     font-size: 36px;
-    padding-bottom: 15px;
     text-decoration: none;
     -webkit-transition: all 0.5s ease 0s;
     -o-transition: all 0.5s ease 0s;
     transition: all 0.5s ease 0s; }
   #blogs > ul li a:hover {
-    color: #FFF;
-    border-color: #F1C40F; }
+    color: #FFF; }
 #blogs > a {
   color: #999;
   border-bottom: 3px solid #b3b3b3;
@@ -185,6 +181,10 @@ body {
     border-color: #F1C40F; }
   #blogs article em {
     color: #FFF; }
+  #blogs article img {
+    margin: 30px 0;
+    max-width: 600px;
+    border: 10px solid #2f2f2f; }
   #blogs article footer {
     margin-top: 60px;
     color: #333333; }

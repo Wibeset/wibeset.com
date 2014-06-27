@@ -1,16 +1,14 @@
 {
 	"articles": [
 		{
-			"title": "Introducing Tygue",
-			"uri": "tygue"
-		},
-		{
 			"title": "Bladerunner: Build a static website on Github Pages with Blade and Gulpjs",
-			"uri": "bladerunner"
+			"uri": "bladerunner",
+			"date": "20140630"
 		},
 		{
-			"title": "Build a REST API with Laravel 4",
-			"uri": "rest-api-laravel4"
+			"title": "&quot; Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take away. &quot; - Antoine de Saint-Exupery",
+			"uri": "perfection",
+			"date": "20140625"
 		}
 	]
 }

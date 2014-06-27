@@ -42,10 +42,8 @@ foreach ($articles['articles'] as $article) {
 
 	$file      = $dir['views'] . '/blog/' . $article['uri'] . '.markdown';
 
-	$timestamp = filemtime($file);
-
 	$blade->view()->share([
-		'date' => Carbon::createFromTimeStamp($timestamp)->diffForHumans()
+		'date' => Carbon::createFromFormat('Ymd', $article['date'])->formatLocalized('%B %d, %Y')
 	]);
 
 	$html = $blade->view()->make('blog/article', [
