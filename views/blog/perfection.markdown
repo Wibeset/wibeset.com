@@ -1,15 +1,23 @@
 # &quot; Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take away. &quot; - Antoine de Saint-Exupery
 
-When I'm building a new functionnality, I'm always thinking about this quote from [Antoine de Saint-Exupery](http://en.wikipedia.org/wiki/Antoine_de_Saint-Exup%C3%A9ry). What do I really need to achieve my goal ? What else can I remove to get this new functionnality simplier ? Simplicity and clarity lead to good design. Less is more.
+Chaque fois que je travaille sur un nouveau projet ou juste une fonctionnalité, je penses toujours à cette citation d'[Antoine de Saint-Exupery](http://en.wikipedia.org/wiki/Antoine_de_Saint-Exup%C3%A9ry). Parresseux un peu de nature, j'essaie toujours de trouver la façon la plus simple d'arriver à mon but.
 
-So I came up with the idea to redesign Wibeset.com. In fact, I think I redesign Wibeset.com once a year. Anyway, I had the idea to make it fit in a window. I mean no scrolling. The only thing I have really remove is clients because I focus I have decide to focus on homemade projects like [Lygue](http://lygue.com).
+> Simplicity and clarity lead to good design
 
-<del>Most of the time</del> 100% of the time, I build websites with white background. This time, I going for a darker one and I like it... probably until next year I guess.
+Quel est le minimum pour que mon produit ou ma fonctionnalité soit viable ? Quels informations dois-je absolument transmettre à l'utilisateur pour que son expérience soit agréable ? Questions simples, réponses parfois complexe. 
 
-## Previous version
+> Difficile à voir. Toujours en mouvement est l'avenir. - Yoda
 
-![Previous version of Wibeset.com](img/perfection/previous.png)
+Il est facile de tomber dans le côté obscur de la force. C'est un constant combat. Il est impossible de prédire l'avenir et il peut être complexe de déterminer ce que l'utilisateur voudra réellement. 
 
-## And now...
+Bref, tout ça pour dire que j'ai eu le goût de refaire [Wibeset](http://wibeset.com). En fait, je crois que j'ai le goût de le refaire en totalité pratiquement toutes les années. Peu importe, mon but était que tout entre dans une fenêtre... pas de <del>scrolling</del> défilement. Et puisque je focus maintenant sur les "projets maisons" tel que [Lygue](http://lygue.com), je pouvais me permettre de retirer la portion clients.
 
-![New version of Wibeset.com](img/perfection/new.png)
+## Avant
+
+![Wibeset.com - Avant](img/perfection/previous.png)
+
+## Et maintenant...
+
+![Wibeset.com - Après](img/perfection/new.png)
+
+[http://wibeset.com](http://wibeset.com)

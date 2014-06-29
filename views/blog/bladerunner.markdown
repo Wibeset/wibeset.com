@@ -1,23 +1,27 @@
-# Bladerunner: Build a static website on Github with Blade and gulp.js
+# Bladerunner: générateur de site statique pour Github Pages avec Blade et gulp.js
 
-Meh, why not using Jekyll ? Because. All my latest projects are built with [Laravel](http://laravel.com) but it may be a bit overkill for a website build with HTML, CSS and JavaScript only. The goal is to get something really really light that can help me build a website with one HTML layout without copying it ([DRY](http://en.wikipedia.org/wiki/Don%27t_repeat_yourself)) on every pages. Here's come the idea, why not build something with [Blade](http://laravel.com/docs/templates) (the template engine from [Laravel](http://laravel.com)) and [gulp.js|(http://gulpjs.com) to compile SASS and Javascript.
+Ouin, mais pourquoi ne pas avoir utilisé [Jekyll](http://jekyllrb.com/) ? Parce que. Tous mes projets, ou presque, depuis 1 an sont développés avec [Laravel](http://laravel.com) mais il peut s'avérer "overkill" pour un site tel que [Wibeset](http://wibeset.com). Alors le but était de créer un générateur de site statique très très très léger qui m'aiderait à développer et maintenir un site statique efficacement et rapidement. 
 
-## Setupping the Github repository
+## Blade à la rescousse!
 
-I use a subdirectory called <em>dist</em> on the <em>master</em> branch to be the root directory of the repository's <em>gh-pages</em> branch. Within the <em>master</em>, we'll get all the stuff that we need to generate the static website and a cleaned version into <em>dist</em> subdirectory that will be use to push into <em>gh-pages</em> branch.
+Un site tel que Wibeset ne nécessite pas beaucoup de HTML et CSS. Reste qu'il y a néanmoins un "layout" qui se répète de page en page. Il n'était pas question copier/coller ce dit layout dans chaque page puisque le 1er commandement est: Tu ne te répèteras point ([DRY](http://en.wikipedia.org/wiki/Don%27t_repeat_yourself)). Étant fan de Laravel, alors pourquoi ne pas utilisé la simplicité de [Blade](http://laravel.com/docs/templates).
+
+<script src="https://gist.github.com/dominicmartineau/a3f984873a510b70001a.js"></script>
+
+## Mais qu'est-ce que [gulp.js](http://gulpjs.com) vient faire dans l'histoire ?
+
+Gulp.js permet de compiler du SASS et du Coffeescript. Il permet aussi la minification... Mais une des fonctionnalités les plus intéressantes est <em>gulp.watch()</em> qui permet d'éxécuter une tâche aussitôt qu'un fichier de type xyz est modifié.
+
+<script src="https://gist.github.com/dominicmartineau/1576a7ad4f957021f1d0.js"></script>
+
+## La mécanique dans la branche master...
+
+Dans la branche <em>master</em>, j'utilise le répertoire <em>dist</em> en tant que subtree pour la branche <em>gh-pages</em>. Je travailles donc dans le master et une fois le site recompilé, je pousse le subtree sur Github.
 
 <script src="https://gist.github.com/dominicmartineau/6bc21eec008854ebdeb8.js"></script>
 
-## Blade (the template engine)
+## Le résultat final
 
-[Blade](http://laravel.com/docs/templates) is a simple, yet powerful templating engine provided with [Laravel](http://laravel.com). [Blade](http://laravel.com/docs/templates) is driven by template inheritance and sections. So it's perfect for layout...
+Bladerunner. Un mixte tout simple de PHP, [Blade](http://laravel.com/docs/templates) et [gulp.js](http://gulpjs.com). Utilisez-le comme bon vous semble.
 
-To use [Blade](http://laravel.com/docs/templates) as a standalone component, I installed [Laravel-Blade](https://packagist.org/packages/philo/laravel-blade) from [PhiloNL](https://github.com/PhiloNL).
-
-## gulp.js (the streaming build system)
-
-[gulp.js](http://gulpjs.com) make it easy to compile SASS and uglify JavaScript. But what I like the most about it is the ability to automatically run task in background on files changes with <em>gulp.watch()</em>.
-
-## The final result: Bladerunner
-
-With a little bit of magic (not really) of a PHP script to generate pages from [Blade](http://laravel.com/docs/templates) views and [gulp.js](http://gulpjs.com), I have create [Bladerunner](https://github.com/Wibeset/bladerunner). Clone it and use it on your own.
+[https://github.com/Wibeset/bladerunner](https://github.com/Wibeset/bladerunner)

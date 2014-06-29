@@ -1,7 +1,7 @@
 {
 	"articles": [
 		{
-			"title": "Bladerunner: Build a static website on Github Pages with Blade and Gulpjs",
+			"title": "Bladerunner: générateur de site statique pour Github Pages avec Blade et Gulp.js",
 			"uri": "bladerunner",
 			"date": "20140626"
 		},
