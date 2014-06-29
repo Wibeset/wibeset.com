@@ -30,29 +30,33 @@
 		<section id="blogs">
 	<a href="http://wibeset.com/blog">..</a>
 	<article>
-		<h1>Bladerunner: Build a static website on Github with Blade and gulp.js</h1>
+		<h1>Bladerunner: générateur de site statique pour Github Pages avec Blade et gulp.js</h1>
 
-<p>Meh, why not using Jekyll ? Because. All my latest projects are built with <a href="http://laravel.com">Laravel</a> but it may be a bit overkill for a website build with HTML, CSS and JavaScript only. The goal is to get something really really light that can help me build a website with one HTML layout without copying it (<a href="http://en.wikipedia.org/wiki/Don%27t_repeat_yourself">DRY</a>) on every pages. Here's come the idea, why not build something with <a href="http://laravel.com/docs/templates">Blade</a> (the template engine from <a href="http://laravel.com">Laravel</a>) and [gulp.js|(http://gulpjs.com) to compile SASS and Javascript.</p>
+<p>Ouin, mais pourquoi ne pas avoir utilisé <a href="http://jekyllrb.com/">Jekyll</a> ? Parce que. Tous mes projets, ou presque, depuis 1 an sont développés avec <a href="http://laravel.com">Laravel</a> mais il peut s'avérer "overkill" pour un site tel que <a href="http://wibeset.com">Wibeset</a>. Alors le but était de créer un générateur de site statique très très très léger qui m'aiderait à développer et maintenir un site statique efficacement et rapidement. </p>
 
-<h2>Setupping the Github repository</h2>
+<h2>Blade à la rescousse!</h2>
 
-<p>I use a subdirectory called <em>dist</em> on the <em>master</em> branch to be the root directory of the repository's <em>gh-pages</em> branch. Within the <em>master</em>, we'll get all the stuff that we need to generate the static website and a cleaned version into <em>dist</em> subdirectory that will be use to push into <em>gh-pages</em> branch.</p>
+<p>Un site tel que Wibeset ne nécessite pas beaucoup de HTML et CSS. Reste qu'il y a néanmoins un "layout" qui se répète de page en page. Il n'était pas question copier/coller ce dit layout dans chaque page puisque le 1er commandement est: Tu ne te répèteras point (<a href="http://en.wikipedia.org/wiki/Don%27t_repeat_yourself">DRY</a>). Étant fan de Laravel, alors pourquoi ne pas utilisé la simplicité de <a href="http://laravel.com/docs/templates">Blade</a>.</p>
+
+<script src="https://gist.github.com/dominicmartineau/a3f984873a510b70001a.js"></script>
+
+<h2>Mais qu'est-ce que <a href="http://gulpjs.com">gulp.js</a> vient faire dans l'histoire ?</h2>
+
+<p>Gulp.js permet de compiler du SASS et du Coffeescript. Il permet aussi la minification... Mais une des fonctionnalités les plus intéressantes est <em>gulp.watch()</em> qui permet d'éxécuter une tâche aussitôt qu'un fichier de type xyz est modifié.</p>
+
+<script src="https://gist.github.com/dominicmartineau/1576a7ad4f957021f1d0.js"></script>
+
+<h2>La mécanique dans la branche master...</h2>
+
+<p>Dans la branche <em>master</em>, j'utilise le répertoire <em>dist</em> en tant que subtree pour la branche <em>gh-pages</em>. Je travailles donc dans le master et une fois le site recompilé, je pousse le subtree sur Github.</p>
 
 <script src="https://gist.github.com/dominicmartineau/6bc21eec008854ebdeb8.js"></script>
 
-<h2>Blade (the template engine)</h2>
+<h2>Le résultat final</h2>
 
-<p><a href="http://laravel.com/docs/templates">Blade</a> is a simple, yet powerful templating engine provided with <a href="http://laravel.com">Laravel</a>. <a href="http://laravel.com/docs/templates">Blade</a> is driven by template inheritance and sections. So it's perfect for layout...</p>
+<p>Bladerunner. Un mixte tout simple de PHP, <a href="http://laravel.com/docs/templates">Blade</a> et <a href="http://gulpjs.com">gulp.js</a>. Utilisez-le comme bon vous semble.</p>
 
-<p>To use <a href="http://laravel.com/docs/templates">Blade</a> as a standalone component, I installed <a href="https://packagist.org/packages/philo/laravel-blade">Laravel-Blade</a> from <a href="https://github.com/PhiloNL">PhiloNL</a>.</p>
-
-<h2>gulp.js (the streaming build system)</h2>
-
-<p><a href="http://gulpjs.com">gulp.js</a> make it easy to compile SASS and uglify JavaScript. But what I like the most about it is the ability to automatically run task in background on files changes with <em>gulp.watch()</em>.</p>
-
-<h2>The final result: Bladerunner</h2>
-
-<p>With a little bit of magic (not really) of a PHP script to generate pages from <a href="http://laravel.com/docs/templates">Blade</a> views and <a href="http://gulpjs.com">gulp.js</a>, I have create <a href="https://github.com/Wibeset/bladerunner">Bladerunner</a>. Clone it and use it on your own.</p>
+<p><a href="https://github.com/Wibeset/bladerunner">https://github.com/Wibeset/bladerunner</a></p>
 		<footer>
 			&mdash;
 			<p>June 26, 2014.</p>
