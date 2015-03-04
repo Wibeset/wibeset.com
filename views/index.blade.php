@@ -7,7 +7,7 @@
 			<h1>Nous sommes Wibeset.</h1>
 		</header>
 		<ul class="hidden animated fadeInDown visible" id="social-links">
-            <li><a href="http://wibeset.com/blog" class="blog">Blog</a></li>
+            <li><a href="http://wibeset.com/blog" class="blog">Blogue</a></li>
             <li><a href="https://twitter.com/Wibeset" class="twitter">Twitter</a></li>
             <li><a href="https://facebook.com/Wibeset" class="facebook">Facebook</a></li>
         </ul>
