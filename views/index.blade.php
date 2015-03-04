@@ -18,7 +18,6 @@
     	</header>
     	<ul class="hidden animated fadeInDown visible" id="social-links">
             <li><a href="http://lygue.com" class="lygue">Lygue</a></li>
-            <li><a href="http://tygue.com" class="tygue">Tygue</a></li>
             <li><a href="http://wibeset.com/tube" class="tube">Tube</a></li>
         </ul>
     </section>
