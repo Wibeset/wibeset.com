@@ -1,6 +1,6 @@
 # Bladerunner: générateur de site statique pour Github Pages avec Blade et gulp.js
 
-Ouin, mais pourquoi ne pas avoir utilisé [Jekyll](http://jekyllrb.com/) ? Parce que. Tous mes projets, ou presque, depuis 1 an sont développés avec [Laravel](http://laravel.com) mais il peut s'avérer "overkill" pour un site tel que [Wibeset](http://wibeset.com). Alors le but était de créer un générateur de site statique très très très léger qui m'aiderait à développer et maintenir un site statique efficacement et rapidement. 
+Ok, mais pourquoi ne pas avoir utilisé [Jekyll](http://jekyllrb.com/) ? Parce que. Tous mes projets, ou presque, depuis 1 an sont développés avec [Laravel](http://laravel.com) mais il peut s'avérer "overkill" pour un site tel que [Wibeset](http://wibeset.com). Alors le but était de créer un générateur de site statique très très très léger qui m'aiderait à développer et maintenir un site statique efficacement et rapidement.
 
 ## Blade à la rescousse!
 

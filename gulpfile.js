@@ -1,9 +1,12 @@
 
 var gulp       = require('gulp');
 var gutil      = require('gulp-util');
-var sass       = require('gulp-sass');
+var concat     = require('gulp-concat');
+var notify     = require('gulp-notify');
+var sass       = require('gulp-ruby-sass');
 var autoprefix = require('gulp-autoprefixer');
 var minifyCSS  = require('gulp-minify-css');
+var uglify     = require('gulp-uglify');
 var exec       = require('child_process').exec;
 var sys        = require('sys');
 
@@ -23,7 +26,7 @@ gulp.task('css', function () {
 // Generate site
 gulp.task('gen', function() {
     exec('php bin/generate.php', function(error, stdout) {
-        sys.puts(stdout);
+        console.log(stdout);
     });
 });
 
