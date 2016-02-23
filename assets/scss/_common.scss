@@ -1,21 +1,21 @@
-/*	Resets
-	------	*/
+/*  Resets
+    ------  */
 
-html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, 
-p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, 
-img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, hr, 
-dl, dt, dd, ol, ul, li, fieldset, form, label, legend, 
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em,
+img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, hr,
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figure, figcaption, hgroup, 
+article, aside, canvas, details, figure, figcaption, hgroup,
 menu, footer, header, nav, section, summary, time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
 
 article, aside, canvas, figure, figure img, figcaption, hgroup,
 footer, header, nav, section, audio, video {
-	display: block;
+    display: block;
 }
 
 a { text-decoration: none; }
@@ -57,94 +57,94 @@ $accent-color:              #FFF;
 }
 
 html, body {
-	height: 100%;
+    height: 100%;
 }
 
 body {
-  	font-family: $font-stack;
-	font-size: small;
-	font-weight: normal;
-	-webkit-text-size-adjust: 100%; /* Stops Mobile Safari from auto-adjusting font-sizes */
-	background-color: $bg-color;
+    font-family: $font-stack;
+    font-size: small;
+    font-weight: normal;
+    -webkit-text-size-adjust: 100%; /* Stops Mobile Safari from auto-adjusting font-sizes */
+    background-color: $bg-color;
 }
 
 /* Contact */
 
 #contact {
-	position: fixed;
-	top: 0; right: 0;
-	display: block;
-	height: 60px;
-	text-decoration: none !important;
-	-webkit-transition: all 250ms ease;
-  	-moz-transition: all 250ms ease;
-  	-o-transition: all 250ms ease;
-  	transition: all 250ms ease;
-  	-webkit-transform-style: preserve-3d;
-  	-moz-transform-style: preserve-3d;
-  	-o-transform-style: preserve-3d;
-  	-ms-transform-style: preserve-3d;
-  	transform-style: preserve-3d;
+    position: fixed;
+    top: 0; right: 0;
+    display: block;
+    height: 60px;
+    text-decoration: none !important;
+    -webkit-transition: all 250ms ease;
+    -moz-transition: all 250ms ease;
+    -o-transition: all 250ms ease;
+    transition: all 250ms ease;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
 
-  	.default-state {
-  		-webkit-transform: translateZ(30px);
-  		-moz-transform: translateZ(30px);
-	  	-o-transform: translateZ(30px);
-	  	-ms-transform: translateZ(30px);
-	  	transform: translateZ(30px);
-	}
+    .default-state {
+        -webkit-transform: translateZ(30px);
+        -moz-transform: translateZ(30px);
+        -o-transform: translateZ(30px);
+        -ms-transform: translateZ(30px);
+        transform: translateZ(30px);
+    }
 
-	.active-state {
-  		-webkit-transform: rotateX(90deg) translateZ(90px);
-  		-moz-transform: rotateX(90deg) translateZ(90px);
-  		-o-transform: rotateX(90deg) translateZ(90px);
-  		-ms-transform: rotateX(90deg) translateZ(90px);
-  		transform: rotateX(90deg) translateZ(90px);
-	}
+    .active-state {
+        -webkit-transform: rotateX(90deg) translateZ(90px);
+        -moz-transform: rotateX(90deg) translateZ(90px);
+        -o-transform: rotateX(90deg) translateZ(90px);
+        -ms-transform: rotateX(90deg) translateZ(90px);
+        transform: rotateX(90deg) translateZ(90px);
+    }
 
-	.default-state,
-	.active-state {
-		display: block;
-		padding: 0 30px;
-		line-height: 60px;
-  		background: $brand-color;
-  		font-size: 20px;
-  		color: #222;
-  		-webkit-transition: background 250ms ease;
-  		-moz-transition: background 250ms ease;
-  		-o-transition: background 250ms ease;
-  		transition: background 250ms ease;
-	}
-	.active-state {
-		background: $accent-color;
-	}
+    .default-state,
+    .active-state {
+        display: block;
+        padding: 0 30px;
+        line-height: 60px;
+        background: $brand-color;
+        font-size: 20px;
+        color: #222;
+        -webkit-transition: background 250ms ease;
+        -moz-transition: background 250ms ease;
+        -o-transition: background 250ms ease;
+        transition: background 250ms ease;
+    }
+    .active-state {
+        background: $accent-color;
+    }
 }
 #contact:hover {
-  	-webkit-transform: rotateX(-90deg);
-  	-moz-transform: rotateX(-90deg);
-  	-o-transform: rotateX(-90deg);
-  	-ms-transform: rotateX(-90deg);
-  	transform: rotateX(-90deg);
+    -webkit-transform: rotateX(-90deg);
+    -moz-transform: rotateX(-90deg);
+    -o-transform: rotateX(-90deg);
+    -ms-transform: rotateX(-90deg);
+    transform: rotateX(-90deg);
 }
 
 #container {
-	display: table;
-	height: 100%;
+    display: table;
+    height: 100%;
 
-	> div, > section {
-		display: table-cell;
-		vertical-align: middle;
-		padding: 100px;
-		width: 100%;
-		height: 100%;
-	}
-	> section {
-		vertical-align: top;
-	}
+    > div, > section {
+        display: table-cell;
+        vertical-align: middle;
+        padding: 100px;
+        width: 100%;
+        height: 100%;
+    }
+    > section {
+        vertical-align: top;
+    }
 }
 
 /* iPhone */
 
 @media only screen and (max-width: 480px) {
-	
+
 }
