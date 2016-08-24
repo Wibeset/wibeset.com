@@ -17,9 +17,10 @@
             <h1>Nous développons des solutions web et mobile au Saguenay.</h1>
         </header>
         <ul class="hidden animated fadeInDown visible" id="social-links">
-            <li><a href="http://lygue.com" class="lygue">Lygue</a></li>
-            <li><a href="http://www.topnhlplayers.com" class="lygue">Top NHL Players</a></li>
-            <li><a href="http://wibeset.github.io/bladerunner/" class="blog">Bladerunner</a></li>
+            <li><a href="http://www.lygue.com" class="lygue">Lygue</a></li>
+            <li><a href="http://www.hockeyarenas.in" class="hockeyarenas">Hockey Arenas In</a></li>
+            <li><a href="http://www.hockeytournaments.in" class="hockeytournaments">Hockey Tournaments In</a></li>
+            <li><a href="http://www.topnhlplayers.com" class="topnhlplayers">Top NHL Players</a></li>
             <li><a href="http://wibeset.com/tube" class="tube">Tube</a></li>
         </ul>
     </section>
