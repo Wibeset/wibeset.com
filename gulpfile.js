@@ -2,13 +2,10 @@
 var gulp       = require('gulp');
 var gutil      = require('gulp-util');
 var concat     = require('gulp-concat');
-var notify     = require('gulp-notify');
 var sass       = require('gulp-ruby-sass');
 var autoprefix = require('gulp-autoprefixer');
-var minifyCSS  = require('gulp-minify-css');
 var uglify     = require('gulp-uglify');
 var exec       = require('child_process').exec;
-var sys        = require('sys');
 
 // Where do you store your Sass files?
 var sassDir = 'assets/scss';

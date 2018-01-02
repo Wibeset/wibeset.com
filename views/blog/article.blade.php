@@ -1,14 +1,14 @@
 @extends('layout')
 
 @section('content')
-<section id="blogs">
-    <a href="http://wibeset.com/blog">..</a>
     <article>
-        {{ $content }}
-        <footer>
-            &mdash;
-            <p>{{ $date }}.</p>
-        </footer>
+        <a href="http://wibeset.com/blog">..</a>
+        <section>
+            {!! $content !!}
+            <footer>
+                &mdash;
+                <p>{{ $date }}.</p>
+            </footer>
+        </section>
     </article>
-</section>
 @endsection

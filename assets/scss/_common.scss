@@ -29,8 +29,8 @@ ul { list-style: none; }
 $font-stack:                "Headland One", Helvetica, Arial, sans-serif;
 $bg-color:                  #222;
 $text-color:                #999;
-$brand-color:               #F1C40F;
-$accent-color:              #FFF;
+$brand-color:               #f1c40f;
+$accent-color:              #fff;
 
 @mixin border-radius($radius) {
     -webkit-border-radius: $radius;
@@ -56,7 +56,7 @@ $accent-color:              #FFF;
     text-align: center;
 }
 
-html, body {
+html {
     height: 100%;
 }
 
@@ -127,20 +127,10 @@ body {
     transform: rotateX(-90deg);
 }
 
-#container {
-    display: table;
-    height: 100%;
+/* Content */
 
-    > div, > section {
-        display: table-cell;
-        vertical-align: middle;
-        padding: 100px;
-        width: 100%;
-        height: 100%;
-    }
-    > section {
-        vertical-align: top;
-    }
+body {
+    padding: 100px;
 }
 
 /* iPhone */

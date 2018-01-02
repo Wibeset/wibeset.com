@@ -5,9 +5,6 @@
     <title>Nous développons des solutions web et mobiles au Saguenay - Wibeset</title>
     <meta name="description" content="Wibeset développe des solutions web et mobiles au Saguenay">
     <meta name="keywords" content="wibeset,mobile,développeur,développement,saguenay,chicoutimi,québec,php">
-    <!--[if lt IE 9]>
-    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
     <link href="//fonts.googleapis.com/css?family=Headland+One" rel="stylesheet" type="text/css">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" media="all" href="{{ $assets }}css/styles.css">
@@ -15,7 +12,7 @@
     <link rel="shortcut icon" href="{{ $assets }}favicon.ico" type="image/x-icon">
     <link rel="icon" type="image/png" href="{{ $assets }}favicon.ico">
 </head>
-<body>
+<body class="{!! $bodyClass !!}">
 
     <a id="contact" href="mailto:hello@wibeset.com">
         <div class="default-state">
@@ -26,9 +23,7 @@
         </div>
     </a>
 
-    <div id="container">
-        @yield('content')
-    </div>
+    @yield('content')
 
     <script type="text/javascript">
         var _gaq = _gaq || [];

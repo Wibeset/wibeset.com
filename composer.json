@@ -1,7 +1,7 @@
 {
     "require": {
         "philo/laravel-blade": "dev-master",
-        "nesbot/carbon": "dev-master",
+        "nesbot/carbon": "1.22.*",
         "michelf/php-markdown": "1.4.*@dev"
     }
 }

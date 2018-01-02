@@ -9,7 +9,7 @@ use \Michelf\Markdown;
 $dir   = [
 	'views' => __DIR__ . '/../views',
 	'cache' => __DIR__ . '/../cache',
-	'dist'  => __DIR__ . '/../dist'
+	'dist' => __DIR__ . '/../dist'
 ];
 
 $views = [
@@ -20,7 +20,8 @@ $blade = new Blade($dir['views'], $dir['cache']);
 
 $blade->view()->share([
 	'version' => time(),
-	'assets'  => 'assets/'
+	'assets' => 'assets/',
+    'bodyClass' => 'home'
 ]);
 
 // Home
@@ -31,7 +32,8 @@ file_put_contents($dir['dist'] . '/index.html', $html);
 $articles = json_decode(file_get_contents($dir['views'] . '/blog/articles.json'), true);
 
 $blade->view()->share([
-	'assets'  => '../assets/'
+	'assets' => '../assets/',
+    'bodyClass' => 'blog'
 ]);
 
 $html = $blade->view()->make('blog/index', ['articles' => $articles['articles']]);
@@ -40,7 +42,7 @@ file_put_contents($dir['dist'] . '/blog/index.html', $html);
 // Blog articles
 foreach ($articles['articles'] as $article) {
 
-	$file      = $dir['views'] . '/blog/' . $article['uri'] . '.markdown';
+	$file = $dir['views'] . '/blog/' . $article['uri'] . '.markdown';
 
 	$blade->view()->share([
 		'date' => Carbon::createFromFormat('Ymd', $article['date'])->formatLocalized('%B %d, %Y')

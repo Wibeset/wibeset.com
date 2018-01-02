@@ -1,5 +1,5 @@
 
-#blogs {
+.blog > article {
 
     > ul {
 
@@ -36,7 +36,7 @@
         border-color: $brand-color;
     }
 
-    article {
+    section {
         line-height: 32px;
         color: $text-color;
         font-size: 20px;

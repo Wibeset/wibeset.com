@@ -6,3 +6,4 @@ composer.phar
 *.sublime-*
 /node_modules
 .sass-cache
+.idea
